@@ -122,4 +122,5 @@ contract EthBridge is Ownable {
     function getFee(uint _amount) public view returns (uint){
         return (_amount * fee )/ 1000;
     }
+    const {abi : EthBridgeAbi, address: EthBridgeAddress} = require("../abis/EthBridge.json");
 }
